@@ -1,5 +1,5 @@
 name: Exploring Workflow Dispatch Trigger
-run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
+run-name: Deploy to ${{ inputs.custom-message }} by @${{ github.actor }}
 
 on:
   workflow_dispatch:
