@@ -7,7 +7,10 @@ jobs:
   test-deprecation:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4   # ✅ REQUIRED for local actions
+
       - name: Run Action with Deprecated Input
-        uses: ./my-action
+        uses: ./my-action           # This references your local custom action
         with:
           old-input: 'some deprecated value'
