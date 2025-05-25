@@ -2,6 +2,9 @@ name: Exploring Workflow Dispatch Trigger
 run-name: Deploy to ${{ inputs.custom-message }} by @${{ github.actor }}
 
 on:
+  push:
+    branches:
+    - main
   workflow_dispatch:
     inputs:
       run-job:
