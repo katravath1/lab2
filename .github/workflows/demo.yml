@@ -1,0 +1,13 @@
+name: Demo Deprecated Input
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-deprecation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Action with Deprecated Input
+        uses: ./my-action
+        with:
+          old-input: 'some deprecated value'

@@ -1,0 +1,12 @@
+name: 'Deprecated Input Demo'
+description: 'An action that warns if deprecated input is used'
+inputs:
+  old-input:
+    description: 'Deprecated. Use new-input instead.'
+    required: false
+  new-input:
+    description: 'Preferred input'
+    required: false
+runs:
+  using: 'node16'
+  main: 'index.js'
