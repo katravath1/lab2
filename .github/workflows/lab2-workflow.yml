@@ -22,6 +22,7 @@ jobs:
     steps:
       - run: echo "Exploring Workflow Dispatch Trigger"
   job2:
+    needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: Printing Custom Message
